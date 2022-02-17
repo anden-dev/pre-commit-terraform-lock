@@ -1,0 +1,7 @@
+- id: terraform-lock-check
+  name: Check terraform lock provider hashes 
+  description: "Check that .terraform.lock.hcl has hashes for linux windows arm and amd64"
+  entry: pre_commit_hooks/terraform_lock_validator.sh
+  language: script
+  files: .terraform.lock.hcl
+
